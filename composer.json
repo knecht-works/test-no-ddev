@@ -1,0 +1,7 @@
+{
+  "name": "knecht-works/test-no-ddev",
+  "description": "A repo without a ddev config, for testing Knecht's environment detection.",
+  "require": {
+    "php": "^8.2"
+  }
+}
