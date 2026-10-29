@@ -11,8 +11,13 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
+    "mysql2": "^3.24.6",
     "nuxt": "^4.5.2",
+    "pg": "^8.23.1",
     "vue": "^3.5.42",
     "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1"
   }
 }

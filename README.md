@@ -26,9 +26,23 @@ pnpm install   # install dependencies
 pnpm dev       # start the Nuxt dev server on 0.0.0.0:3000
 ```
 
+## Database
+
+The start page also talks to a database: it creates a `notes` table on first
+use and lets you add rows, so Knecht's generated environment with a database
+can be tested for reads and writes. Set `DATABASE_URL` (see `.env.example`) to
+any MySQL, MariaDB or PostgreSQL URL. Without it the rest of the page still
+renders and the database card shows why it is empty.
+
+```bash
+DATABASE_URL=mysql://db:db@db:3306/db       # Knecht with a MySQL or MariaDB database
+DATABASE_URL=postgres://db:db@db:5432/db    # Knecht with a PostgreSQL database
+```
+
 ## URLs
 
 | Role  | URL                           |
 | ----- | ----------------------------- |
 | Site  | `http://localhost:3000`       |
 | About | `http://localhost:3000/about` |
+| Notes | `http://localhost:3000/api/notes` |
